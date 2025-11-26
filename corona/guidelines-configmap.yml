@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: guidelinesconfig
+  labels:
+    appName: guidelinesConfigMap
+    version: "1.0"
+data:
+  oxygenLevels: "90"
+  quarantine: "7"
+  liters: "2"
+  temparatureLevels: "99-107"
+

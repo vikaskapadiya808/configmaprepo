@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: corona
+server:
+  port: 8081
+
+guidelines:
+  oxygenLevels: 90
+  quarantine: 7
+  liters: 2
+  temparatureLevels: 99-107
+
