@@ -22,7 +22,8 @@ public class FindInspectorRestController {
 	public String getInspector(@PathVariable("district") String district) throws FileNotFoundException, IOException {
 
 		Properties props = new Properties();
-		props.load(new FileInputStream(new File(env.getProperty("config-file")+"district-inspector.properties")));
+                System.out.println(env.getProperty("config-file"));
+		props.load(new FileInputStream(new File("/config/district-inspector.properties")));
 
 		return props.getProperty(district);
 

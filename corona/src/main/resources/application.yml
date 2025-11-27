@@ -9,4 +9,4 @@ guidelines:
   quarantine: 7
   liters: 2
   temparatureLevels: 99-107
-
+config-file: /config/

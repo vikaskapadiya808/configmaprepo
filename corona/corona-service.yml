@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: coronaservice
+spec:
+  type: NodePort
+  selector:
+    appName: coronaapp   # must match your Pod label
+  ports:
+    - port: 8081         # service port
+      targetPort: 8081   # container port
+      nodePort: 30081    # external port (range 30000–32767)

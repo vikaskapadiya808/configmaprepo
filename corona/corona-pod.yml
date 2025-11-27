@@ -18,22 +18,22 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: guidelinesconfig
-              value: oxygenLevels
+              key: oxygenLevels
         - name: guidelines.liters
           valueFrom:
             configMapKeyRef:
               name: guidelinesconfig
-              value: liters
+              key: liters
         - name: guidelines.quarantine
           valueFrom:
             configMapKeyRef:
               name: guidelinesconfig
-              value: quarantine
+              key: quarantine
         - name: guidelines.temparatureLevels
           valueFrom:
             configMapKeyRef:
               name: guidelinesconfig
-              value: temparatureLevels
+              key: temparatureLevels
       volumeMounts:
         - name: config-volume
           mountPath: /config
